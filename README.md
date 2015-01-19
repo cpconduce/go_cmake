@@ -29,5 +29,7 @@ This will create a binary called
 the `install` target it will put said binary in `$PREFIX/bin/redis_lister`.
 
 If you want to set build flags, you can use the CMake variable
-`CMAKE_GO_FLAGS`.
+`CMAKE_GO_FLAGS`. If you want to include modules local to
+`redis_lister.go`, include them in the `"./module"` style. Be sure
+to put your top level source file in the package `main`.
 
