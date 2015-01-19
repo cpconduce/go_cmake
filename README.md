@@ -33,7 +33,17 @@ If you want to set build flags, you can use the CMake variable
 `redis_lister.go`, include them in the `"./module"` style. Be sure
 to put your top level source file in the package `main`.
 
+## Under the hood
+
+A directory `${CMAKE_BINARY_DIR}/go` is created and set as the
+`$GOPATH` environment variable in all `go get` and `go build`
+calls. All subprojects share a `$GOPATH`.
+
+
 ## Cavaets
+
+`go get` and `go build` are the only directives to the `go` command
+that are accounted for.
 
 I've tested this on OS X 10.9 and Ubuntu 14.04. I haven't tried it on
 Windows, though I would be deeply surprised if it worked.
