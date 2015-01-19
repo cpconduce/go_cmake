@@ -8,7 +8,7 @@ play nice with CMake? Here's an attempt.
 ## Instructions
 
 In your top level [`CMakeLists.txt`](CMakeLists.txt) file, include
-[`GolangSimple.cmake`](bld/cmakeGolangSimple.cmake):
+[`GolangSimple.cmake`](bld/cmake/GolangSimple.cmake):
 
     cmake_minimum_required(VERSION 3.0)
     include(bld/cmake/GolangSimple.cmake)
