@@ -33,3 +33,7 @@ If you want to set build flags, you can use the CMake variable
 `redis_lister.go`, include them in the `"./module"` style. Be sure
 to put your top level source file in the package `main`.
 
+## Cavaets
+
+I've tested this on OS X 10.9 and Ubuntu 14.04. I haven't tried it on
+Windows, though I would be deeply surprised if it worked.
